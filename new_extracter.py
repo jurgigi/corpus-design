@@ -47,7 +47,7 @@ def scrap_url(url):
 with open('/parallel_abstracts.csv', 'w', newline='') as f1:
 	writer = csv.writer(f1, quoting=csv.QUOTE_ALL, quotechar='"')
 	
-	with open('/Users/jurgigiraud/Documents/articles.csv', 'r', newline='') as f:
+	with open('/articles.csv', 'r', newline='') as f:
 		reader = csv.reader(f)
 		for row in reader:
 			if row[2] == '10.1051':
