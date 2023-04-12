@@ -44,7 +44,7 @@ def scrap_url(url):
 	return (' '.join(paragraphs2), ' '.join(paragraphs1))
 
 	
-with open('/Users/jurgigiraud/Documents/new_parallel_abstracts.csv', 'w', newline='') as f1:
+with open('/parallel_abstracts.csv', 'w', newline='') as f1:
 	writer = csv.writer(f1, quoting=csv.QUOTE_ALL, quotechar='"')
 	
 	with open('/Users/jurgigiraud/Documents/articles.csv', 'r', newline='') as f:
