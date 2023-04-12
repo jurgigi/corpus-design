@@ -3,7 +3,7 @@
 from Bio import Entrez
 import csv 
 
-Entrez.email = "jurgi68920@gmail.com"
+Entrez.email = "example@email.com"
 
 def search_articles(query, retmax):
 	handle = Entrez.esearch(db="pubmed", term=query, retmax=retmax)
@@ -41,5 +41,5 @@ for t, d in articles:
 
 
 
-with open('/Users/jurgigiraud/Documents/articles.csv', 'w') as f: 
+with open('/articles.csv', 'w') as f: 
 	csv.writer(f).writerows(filtered_articles)
