@@ -10,21 +10,21 @@ def get_content_sd():
 				"sec0050", "sec0055", "sec0060", "sec0065", "sec0070", "sec0075", "sec0080", "sec0085", "sec0090", "sec0095"]
 
 	options = webdriver.ChromeOptions()
-	options.add_argument(r"--user-data-dir=/Users/jurgigiraud/Library/Application Support/Google/Chrome") #e.g. C:\Users\You\AppData\Local\Google\Chrome\User Data
-#	options.add_argument(r'--profile-directory=/Users/jurgigiraud/Library/Application Support/Google/Chrome/Default') #e.g. Profile 3
+	options.add_argument(r" ") #e.g. C:\Users\You\AppData\Local\Google\Chrome\User Data
+#	options.add_argument(r' ') #e.g. Profile 3
 	driver = webdriver.Chrome(chrome_options=options)
 	driver.get("https://doi.org/10.1016/j.gyobfe.2011.04.009")
 	
-	time.sleep(60)
+	time.sleep( )#change value if needed
 	
-	science_direct_dois = ["https://doi.org/10.1016/j.gyobfe.2011.04.009", "https://doi.org/10.1016/j.gyobfe.2010.08.030"]
+	science_direct_dois = [" "]# insert DOI link
 	
 	for doi in science_direct_dois:
 		print(f"---------------------------------------------------\nNavigating to: {doi}")
 		driver.get(doi)
 		time.sleep(3)
 		output = ""
-#		output = driver.find_element(By.ID, "sec0010").text
+#		output = driver.find_element(By.ID, " ").text #change element
 		
 		for sec in sections:
 			try:
