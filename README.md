@@ -4,7 +4,8 @@ This repository contains the Python scripts used to extract data and compile cor
 
 # Requirements 
 These scripts require Python3 to run locally as well as the following libraries and packages:
-BeautifulSoup4
-Natural Language Toolkit (NLTK)
-spaCy
-Selenium
+•	BeautifulSoup4
+•	Natural Language Toolkit (NLTK)
+•	spaCy
+•	Selenium
+
