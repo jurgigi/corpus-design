@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 import re
 
@@ -6,12 +5,10 @@ import re
 pattern = r'tel-\d{8}'
 
 # open the input and output files
-with open('/Users/jurgigiraud/Documents/results.txt', 'r') as input_file, open('/Users/jurgigiraud/Documents/v3_tel_output.txt', 'w') as output_file:
-	# loop through each line in the input file
+with open('', 'r') as input_file, open('', 'w') as output_file:
 	num_matches = 0
 	
 	for line in input_file:
-		# search for the pattern in the line using regular expressions
 		match = re.search(pattern, line)
 		
 		# if a match is found, write it to the output file
