@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 from Bio import Entrez
 import csv 
@@ -41,5 +40,5 @@ for t, d in articles:
 
 
 #insert file path
-with open('/articles.csv', 'w') as f: 
+with open('', 'w') as f: 
 	csv.writer(f).writerows(filtered_articles)
