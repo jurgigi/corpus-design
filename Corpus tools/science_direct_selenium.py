@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 import time
 from selenium import webdriver
@@ -11,7 +10,7 @@ def get_content_sd():
 
 	options = webdriver.ChromeOptions()
 	options.add_argument(r" ") #e.g. C:\Users\You\AppData\Local\Google\Chrome\User Data
-#	options.add_argument(r' ') #e.g. Profile 3
+#	options.add_argument(r' ') 
 	driver = webdriver.Chrome(chrome_options=options)
 	driver.get("https://doi.org/10.1016/j.gyobfe.2011.04.009")
 	
